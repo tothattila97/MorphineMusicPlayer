@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Morphine MusicPlayer</string>
+    <string name="szamok">Számok</string>
+    <string name="albumok">Albumok</string>
+    <string name="eloadok">Előadók</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Keresendő zene</string>
+    <string name="pleaseTurnOnWifi">Kerlek kapcsold be az internetet</string>
+</resources>

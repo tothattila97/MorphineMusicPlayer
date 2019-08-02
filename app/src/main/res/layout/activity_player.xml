@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="attila.toth.production.morphinemusicplayer.PlayerActivity"
+    android:background="@drawable/actionbar_gradient"
+    android:gravity="center">
+
+    <!--<TextView
+        android:id="@+id/extratv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>  -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/nameOfMusictv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Példa muzsika"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/artistOfMusictv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Példa előadó"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="15">
+
+        <TextView
+            android:id="@+id/musicSecondCounterTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="eltelt"
+            android:gravity="center_horizontal"
+            android:textColor="#FFFFFF"/>
+
+        <SeekBar
+            android:id="@+id/musicSeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressBackgroundTint="#b5b5b5"
+            android:thumbTint="@color/supermanGradientFirst"
+            android:progressTint="#00ddff"
+            android:layout_weight="11" />
+
+        <TextView
+            android:id="@+id/musicDurationTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="hossz"
+            android:gravity="center_horizontal"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/previousIB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_skip_previous_white_48dp"
+            android:background="@null"/>
+
+        <ToggleButton
+            android:id="@+id/playPauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_play_pause"
+            android:textOn=""
+            android:textOff=""
+            android:layout_gravity="center_vertical"/>
+
+        <ImageButton
+            android:id="@+id/nextIB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/ic_skip_next_white_48dp"/>
+
+        <ImageButton
+            android:id="@+id/repeatIB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/ic_repeat_once_white_48dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
